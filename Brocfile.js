@@ -2,7 +2,13 @@
 
 var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
-var app = new EmberApp();
+var app = new EmberApp({
+  'foundation-sass': {
+    'modernizr': true, //includes modernizer
+    'fastclick': true, //includes fastclick
+    'foundationJs': 'all' //Includes the full foundation.js with all modules
+  }
+});
 
 // Use `app.import` to add additional libraries to the generated
 // output files.

@@ -1,0 +1,39 @@
+<form {{action 'save' on='submit'}}>
+  <h5>{{errorMessage}}</h5>
+  <div class="row">
+    <div class="medium-6 columns">
+      <label>Nombre
+        {{input value=nombre placeholder='Nombre'}}
+      </label>
+    </div>
+    <div class="medium-6 columns">
+      <label>NIT
+        {{input value=nit placeholder='NIT'}}
+      </label>
+    </div>
+    <div class="medium-6 columns">
+      <label>Gerente
+        {{input value=gerente placeholder='Gerente'}}
+      </label>
+    </div>
+    <div class="medium-6 columns">
+      <label>Teléfono
+        {{input value=telefono placeholder='Teléfono'}}
+      </label>
+    </div>
+    <div class="medium-6 columns">
+      <label>Dirección
+        {{input value=direccion placeholder='Dirección'}}
+      </label>
+    </div>
+    <div class="medium-6 columns">
+      <label>Nombre
+        {{input value=nombre placeholder='Nombre'}}
+      </label>
+    </div>
+    <div class="medium-6 columns">
+      <input type="submit" value="save" class="button"/>
+      {{#link-to 'empresas'}}Cancelar{{/link-to}}
+    </div>
+  </div>
+</form>

@@ -1,3 +1,15 @@
-<h2 id='title'>Welcome to Ember.js</h2>
+<div class="icon-bar five-up">
+  <a class="item">
+    <label>VISIONAMOS Mini</label>
+  </a>
+  {{#link-to 'empresas' class="item"}}
+    <label>Empleados</label>
+  {{/link-to}}
+</div>
 
-{{outlet}}
+<div class="row">
+  <div class="large-10 large-offset-1 column">
+    {{outlet}}
+  </div>
+</div>
+
